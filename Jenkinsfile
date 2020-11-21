@@ -27,7 +27,7 @@ pipeline{
 		}
         stage ('Sonarqube deployment Stage'){
 			steps{
-				bat 'mvn sonar:sonar'	
+				sh 'mvn sonar:sonar'	
 			}	
 		}
         stage('Image Build'){
