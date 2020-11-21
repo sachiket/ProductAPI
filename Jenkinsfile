@@ -9,7 +9,7 @@ pipeline{
         PROJECT='NODE_APP'
         IMAGE= "$PROJECT:$VERSION"
         ECRURL='https://196737838717.dkr.ecr.ap-south-1.amazonaws.com/product'
-        ECRCRED='ecr:ap-south-1:0f3ebdb1-d235-4a5b-8f86-e1cd4e6c2d78'
+        ECRCRED='ecr:ap-south-1:140c8730-7141-49ed-be9c-7bfe9ec8646b'
 
     }
 
