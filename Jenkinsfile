@@ -25,11 +25,7 @@ pipeline{
 				sh 'mvn install'	
 			}	
 		}
-        stage ('Sonarqube deployment Stage'){
-			steps{
-				sh 'mvn sonar:sonar -Dsonar.host.url=https://d126ccb95872.ngrok.io'	
-			}	
-		}
+      
         stage('Image Build'){
             steps{
                 script{
