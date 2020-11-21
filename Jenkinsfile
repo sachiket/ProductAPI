@@ -2,11 +2,12 @@ pipeline{
     agent any
     tools {
 		maven 'maven'
+		docker 'docker'
 	}
     environment
     {
         VERSION="$BUILD_NUMBER"
-        PROJECT='NODE_APP'
+        PROJECT='PRODUCT_API'
         IMAGE= "$PROJECT:$VERSION"
         ECRURL='https://196737838717.dkr.ecr.ap-south-1.amazonaws.com/product'
         ECRCRED='ecr:ap-south-1:140c8730-7141-49ed-be9c-7bfe9ec8646b'
