@@ -8,7 +8,7 @@ pipeline{
         VERSION="$BUILD_NUMBER"
         PROJECT='productapi'
         IMAGE= "$PROJECT:$VERSION"
-        ECRURL='https://196737838717.dkr.ecr.ap-south-1.amazonaws.com/product'
+        ECRURL='https://196737838717.dkr.ecr.ap-south-1.amazonaws.com/productapi'
         ECRCRED='ecr:ap-south-1:awscredentials'
 
     }
